@@ -1,2 +1,24 @@
-function cambiarIdioma(){var idioma=localStorage.getItem("kayuvaty_language");if(idioma=="ES"){$(".cambio_idioma_EN").attr("style","display:none !important");$(".cambio_idioma_ES").show();}else{$(".cambio_idioma_ES").attr("style","display:none !important");$(".cambio_idioma_EN").show();}}
-$(".enlace_cambio_idioma").on("click",function(){var idioma=$(this).attr("data-lantext");localStorage.setItem("kayuvaty_language",idioma);cambiarIdioma(idioma);});
+$(document).ready(function () {
+  const botonIdioma = document.getElementById('cambioIdioma');
+  let idioma = localStorage.getItem("kayuvaty_language") || "ES"; // Idioma inicial: español
+
+  establecerIdioma(idioma);
+
+  botonIdioma.addEventListener('click', () => {
+    idioma = idioma === "ES" ? "EN" : "ES";
+    establecerIdioma(idioma);
+    localStorage.setItem("kayuvaty_language", idioma);
+  });
+
+  function establecerIdioma(idioma) {
+    botonIdioma.textContent = idioma === "ES" ? "EN" : "ES"; // Texto del botón
+
+    if (idioma == "ES") {
+      $(".cambio_idioma_EN").hide();
+      $(".cambio_idioma_ES").show();
+    } else {
+      $(".cambio_idioma_ES").hide();
+      $(".cambio_idioma_EN").show();
+    }
+  }
+});

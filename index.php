@@ -9,32 +9,28 @@
   <meta property="og:title" content="Kayuvaty">
   <meta property="og:url" content="https://www.kayuvaty.mx">
   <meta name="description" property="og:description" content="Eleva tu vida. Un desarrollo estratégico en 4 etapas donde el lujo y la exclusividad se encuentran. Descubre un nuevo nivel de sofisticación.">
-  <title>Kayuvaty | Paz y Tranquilidad</title>
+  <title>Kayuvaty | El lugar para vivir</title>
   <meta property="og:image" content="https://www.kayuvaty.mx/img/Render.jpg">
   <meta name="description" content="Un proyecto innovador dividido en cuatro etapas estratégicas en las que se toman en cuenta desde la planificación hasta la comercialización, ofreciendo unidades versátiles para diferentes usos: residenciales, comerciales y mixtos.">
   <meta name="keywords" content="Departamentos de lujo, Venta, Locales comerciales, Nuevo Nayarit, Nuevo Vallarta, Bahía de Banderas, Residenciales, Amenidades">
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-
-  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/favicon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!--JS -->
+  <script src="js/index.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
   <!-- Main CSS File -->
   <link href="css/main.css" rel="stylesheet">
-  <script type="module" src="js/index.js"></script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KE6R2GG5N"></script>
   <script>
@@ -44,52 +40,40 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'G-1KE6R2GG5N');
   </script>
-
-
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="img/Logo webp blanco.webp" alt="">
         <!--<h1 class="sitename">Kayuvaty</h1> -->
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active cambio_idioma_ES">Inicio</a></li>
           <li><a href="#hero" class="active cambio_idioma_EN" style="display: none !important;">Home</a></li>
-          <li><a href="#about" class="cambio_idioma_ES">Acerca de</a></li>
+          <li><a href="#about" class="cambio_idioma_ES">Nosotros</a></li>
           <li><a href="#about" class="cambio_idioma_EN" style="display: none !important;">About</a></li>
-          <li><a href="#services" class="cambio_idioma_ES">Servicios</a></li>
-          <li><a href="#services" class="cambio_idioma_EN" style="display: none !important;">Services</a></li>
-          <li><a href="#portfolio" class="cambio_idioma_ES">Portafolio</a></li>
-          <li><a href="#portfolio" class="cambio_idioma_EN" style="display: none !important;">Portfolio</a></li>
-          <li><a href="#team"  class="cambio_idioma_ES">Equipo</a></li>
-          <li><a href="#team"  class="cambio_idioma_EN" style="display: none !important;">Team</a></li>
+          <li><a href="#services" class="cambio_idioma_ES">Amenidades</a></li>
+          <li><a href="#services" class="cambio_idioma_EN" style="display: none !important;">Amenities</a></li>
+          <li><a href="#portfolio" class="cambio_idioma_ES">Etapas</a></li>
+          <li><a href="#portfolio" class="cambio_idioma_EN" style="display: none !important;">Phase</a></li>
+          <li><a href="#team" class="cambio_idioma_ES">Equipo</a></li>
+          <li><a href="#team" class="cambio_idioma_EN" style="display: none !important;">Team</a></li>
           <li><a href="#contact" class="cambio_idioma_ES">Contacto</a></li>
           <li><a href="#contact" class="cambio_idioma_EN" style="display: none !important;">Contact</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="cambio_idioma_EN" style="display:none !important">Language</span>
-              <span class="cambio_idioma_ES">Idioma</span>
-            </a>
-            <ul class="dropdown" aria-labelledby="dropdownMenuLink1" style="margin: 0px; background:none;">
+          <li>
+            <ul class="col-6 col-md d-flex justify-content-end" style="margin: 0px; background: none;">
               <li>
-                <button class="scrollto btn enlace_cambio_idioma cambio_idioma_ES" data-lantext="EN"><img src="img/eng.png" loading="lazy" title="Inglés" style="width: 32px; height: auto;" alt="USA Flag"></button>
-                <button class="scrollto btn enlace_cambio_idioma cambio_idioma_ES" data-lantext="ES"><img src="img/esp.png" loading="lazy" title="Español" style="width: 32px; height: auto;" alt="Mexican Flag"></button>
-                <button class="scrollto btn enlace_cambio_idioma cambio_idioma_EN" style="display:none !important;" data-lantext="EN"><img src="img/eng.png" loading="lazy" title="English" style="width: 32px; height: auto;" alt="USA Flag"></button>
-                <button class="scrollto btn enlace_cambio_idioma cambio_idioma_EN" style="display: none !important;" data-lantext="ES"><img src="img/esp.png" loading="lazy" title="Spanish" style="width: 32px; height: auto;" alt="Mexican Flag"></button>
+                <button id="cambioIdioma" class="scrollto btn enlace_cambio_idioma" style="color:azure;" data-lantext="EN">EN</button>
               </li>
             </ul>
           </li>
+          <li><img src="img/favicon.png" style="width: 25px; heigth:auto;" alt=""></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -101,9 +85,16 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+      <!-- Carrusel -->
+      <div id="carrusel">
+        <img src="img/hero-bg.webp" alt="">
+        <img src="img/maqueta/02.jpg" alt="">
+        <img src="img/maqueta/03 (1).jpg" alt="">
+        <img src="img/maqueta/04 B.jpg" alt="">
+        <img src="img/maqueta/09 (1).jpg" alt="">
+      </div>
 
-      <img src="img/hero-bg.jpg" alt="" data-aos="fade-in">
-
+      <!-- Nuevo Carrusel-->
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -119,7 +110,7 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
+    <!-- About Section 
     <section id="about" class="about section">
 
       <div class="container">
@@ -165,7 +156,8 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section> 
+    /About Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
@@ -176,29 +168,29 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Etapas</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departamentos</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="14000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>m<sup>2</sup> de area comercial</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Amenidades</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -208,12 +200,12 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- Services Section -->
+    <!-- Amenities Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>Amenidades</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -223,8 +215,8 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
+              <div class="icon ">
+                <i class="icon-andadores"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Nesciunt Mete</h3>
@@ -236,7 +228,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="icon-alberca"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Eosle Commodi</h3>
@@ -248,7 +240,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="icon-seguridad"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Ledo Markt</h3>
@@ -260,7 +252,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="icon-areas-verdes"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Asperiores Commodit</h3>
@@ -273,7 +265,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="icon-pet-area"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Velit Doloremque</h3>
@@ -286,7 +278,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="icon-fogatas"></i>
               </div>
               <a href="service-details" class="stretched-link">
                 <h3>Dolori Architecto</h3>
@@ -300,9 +292,9 @@
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Amenities Section -->
 
-    <!-- Call To Action Section -->
+    <!-- Call To Action Section 
     <section id="call-to-action" class="call-to-action section dark-background">
 
       <img src="img/cta-bg.jpg" alt="">
@@ -321,16 +313,18 @@
 
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section>
+    
+    /Call To Action Section -->
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section 
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -342,7 +336,7 @@
             <li data-filter=".filter-product">Product</li>
             <li data-filter=".filter-branding">Branding</li>
             <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -354,7 +348,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -364,7 +358,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -374,7 +368,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -384,7 +378,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -394,7 +388,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -404,7 +398,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -414,7 +408,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -424,7 +418,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -434,7 +428,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -444,7 +438,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -454,7 +448,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -464,24 +458,25 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
+          </div><
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
+    /Portfolio Section -->
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section 
     <section id="pricing" class="pricing section">
 
-      <!-- Section Title -->
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -504,7 +499,9 @@
                 <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
               </ul>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
+          
+         
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item featured">
@@ -524,7 +521,7 @@
                 <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
               </ul>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item">
@@ -543,23 +540,24 @@
                 <li><i class="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
               </ul>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section>
+    
+    /Pricing Section -->
 
-    <!-- Team Section -->
+    <!-- Team Section 
     <section id="team" class="team section">
 
-      <!-- Section Title -->
+     
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
 
         <div class="row gy-4">
@@ -579,7 +577,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
@@ -596,7 +594,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
@@ -613,7 +611,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
@@ -630,13 +628,15 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section>
+    
+    /Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -660,7 +660,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Av, Mexico, Nuevo Nayarit, 63735</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -668,7 +668,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+52 322 205 8256</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -676,7 +676,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>info@kayuvaty.mx</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -724,21 +724,20 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Kayuvaty</h3>
+      <h3><img src="img/Logo png blanco.png" style="width: 200px; heigth:auto;" alt=""></h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
+
         <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+
       </div>
       <div class="container">
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Kayuvaty</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          Designed by <a href="https://github.com/Test-IINC">Test-IINC</a>
+          <!-- Designed by <a href="https://github.com/Test-IINC">Test-IINC</a> -->
         </div>
       </div>
     </div>
@@ -761,26 +760,46 @@
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeqCXPebFkNEn2FZR6uo-lMlo1My06ydM&callback=initMap&v=weekly"
     defer></script>
 
   <!-- Main JS File -->
   <script src="js/script.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let currentIndex = 0;
+      const images = document.querySelectorAll('#carrusel img');
+      const totalImages = images.length;
 
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/67795fc749e2fd8dfe026c4f/1igp1s8ub';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+      function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+      }
+
+      // Mostrar la primera imagen al cargar la página
+      images[currentIndex].classList.add('active');
+
+      // Cambiar de imagen cada 3 segundos
+      setInterval(showNextImage, 6000);
+    });
+  </script>
+  <!--Start of Tawk.to Script
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/67795fc749e2fd8dfe026c4f/1igp1s8ub';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  End of Tawk.to Script-->
 </body>
 
 </html>

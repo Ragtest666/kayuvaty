@@ -1,29 +1,244 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom left, rgb(124, 124, 124), #f0f0f0);
+}
+
+/* Carrusel*/
+#carrusel {
+ z-index: 0;
+  width: 100vw;
+  height: 100vh; /* Ajusta la altura según necesites */
+  overflow: hidden;
+}
+
+/* Imágenes del carrusel */
+#carrusel img {
+  position: absolute;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+/* Mostrar la imagen activa */
+#carrusel img.active {
+  opacity: 1;
+}
+
+
+.banner {
+  background-color: #EA8806;
+  color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .text {
+  text-align: left;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  max-height: 40px;
+  width: auto;
+  margin: 0 20px;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 14.9%;
+}
+
+.content img {
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.questrial-regular {
+  font-family: "Questrial", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    padding: 0 10%;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .text {
+    text-align: center;
+
+  }
+
+  .footer-logos {
+    justify-content: center;
+  }
+
+  .footer-logos img {
+    margin: 5px;
+    max-width: 25em;
+  }
+
+  .content img {
+    max-height: auto;
+  }
+
+  .questrial-regular {
+    font-family: "Questrial", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?bioosp');
+  src: url('fonts/icomoon.eot?bioosp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bioosp') format('truetype'),
+    url('fonts/icomoon.woff?bioosp') format('woff'),
+    url('fonts/icomoon.svg?bioosp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-areas-verdes:before {
+  content: "\e901";
+}
+
+.icon-canchas-Padel:before {
+  content: "\e903";
+}
+
+.icon-fogatas:before {
+  content: "\e904";
+}
+
+.icon-pet-area:before {
+  content: "\e905";
+}
+
+.icon-seguridad:before {
+  content: "\e906";
+}
+
+.icon-alberca:before {
+  content: "\e900";
+}
+
+.icon-andadores:before {
+  content: "\e902";
+}
+
+.icon-voleibol:before {
+  content: "\e90e";
+}
+
+.icon-telefono:before {
+  content: "\e945";
+}
+
+
+#map {
+  height: 300px;
+  width: auto;
+  background-color: #2f3942;
+}
 
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Roboto",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roboto", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #666666; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #333333; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #EA8806; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #666666;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #333333;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #EA8806;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #666666; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #EA8806; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #666666;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #EA8806;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */

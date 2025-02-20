@@ -1,0 +1,156 @@
+CREATE TABLE torres (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nombre_torre TEXT NOT NULL,
+
+    cantidad_departamentos INT NOT NULL,
+
+    cantidad_pisos INT NOT NULL,
+
+    etapa_id BIGINT,
+
+    FOREIGN KEY (etapa_id) REFERENCES etapas(id) ON DELETE SET NULL
+
+);
+
+
+CREATE TABLE etapas (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    numero_etapa INT NOT NULL,
+
+    fecha_inicio DATE NOT NULL,
+
+    fecha_final DATE NOT NULL
+
+);
+
+
+CREATE TABLE departamentos (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    numero_departamento INT NOT NULL,
+
+    descripcion TEXT,
+
+    numero_banos INT NOT NULL,
+
+    numero_recamaras INT NOT NULL,
+
+    metros_cuadrados DECIMAL(10, 2) NOT NULL,
+
+    piso INT NOT NULL,
+
+    precio DECIMAL(15, 2) NOT NULL,
+
+    torre_id BIGINT,
+
+    FOREIGN KEY (torre_id) REFERENCES torres(id) ON DELETE CASCADE
+
+);
+
+
+CREATE TABLE clientes (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nombre_cliente TEXT NOT NULL,
+
+    correo TEXT NOT NULL,
+
+    telefono TEXT NOT NULL,
+
+    nacionalidad TEXT
+
+);
+
+
+CREATE TABLE cotizaciones (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    cliente_id BIGINT,
+
+    departamento_id BIGINT,
+
+    fecha_cotizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    precio_ofrecido DECIMAL(15, 2) NOT NULL,
+
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id) ON DELETE CASCADE,
+
+    FOREIGN KEY (departamento_id) REFERENCES departamentos(id) ON DELETE CASCADE
+
+);
+
+
+CREATE TABLE tipos_usuario (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    tipo TEXT NOT NULL
+
+);
+
+
+CREATE TABLE usuarios (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nombre_usuario TEXT NOT NULL,
+
+    contrasena TEXT NOT NULL,
+
+    correo TEXT NOT NULL,
+
+    telefono TEXT,
+
+    foto_url TEXT,
+
+    tipo_usuario_id BIGINT,
+
+    FOREIGN KEY (tipo_usuario_id) REFERENCES tipos_usuario(id) ON DELETE SET NULL
+
+);
+
+
+CREATE TABLE amenidades (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    nombre_amenidad TEXT NOT NULL,
+
+    torre_id BIGINT,
+
+    FOREIGN KEY (torre_id) REFERENCES torres(id) ON DELETE CASCADE
+
+);
+
+
+CREATE TABLE departamentos_ingles (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    departamento_id BIGINT,
+
+    descripcion_ingles TEXT,
+
+    FOREIGN KEY (departamento_id) REFERENCES departamentos(id) ON DELETE CASCADE
+
+);
+
+
+CREATE TABLE amenidades_ingles (
+
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+    amenidad_id BIGINT,
+
+    nombre_amenidad_ingles TEXT,
+
+    FOREIGN KEY (amenidad_id) REFERENCES amenidades(id) ON DELETE CASCADE
+
+);
