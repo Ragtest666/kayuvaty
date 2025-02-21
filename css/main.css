@@ -133,18 +133,17 @@ body {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?bioosp');
-  src: url('fonts/icomoon.eot?bioosp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bioosp') format('truetype'),
-    url('fonts/icomoon.woff?bioosp') format('woff'),
-    url('fonts/icomoon.svg?bioosp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?35galf');
+  src:  url('fonts/icomoon.eot?35galf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?35galf') format('truetype'),
+    url('fonts/icomoon.woff?35galf') format('woff'),
+    url('fonts/icomoon.svg?35galf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -159,39 +158,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-areas-verdes:before {
-  content: "\e901";
+.icon-face:before {
+  content: "\e907";
+  color: #4e525b;
 }
-
-.icon-canchas-Padel:before {
-  content: "\e903";
+.icon-insta:before {
+  content: "\e908";
+  color: #4e525b;
 }
-
-.icon-fogatas:before {
-  content: "\e904";
-}
-
-.icon-pet-area:before {
-  content: "\e905";
-}
-
-.icon-seguridad:before {
-  content: "\e906";
-}
-
-.icon-alberca:before {
+.icon-comercial:before {
   content: "\e900";
 }
-
-.icon-andadores:before {
+.icon-fogatas:before {
+  content: "\e901";
+}
+.icon-gym:before {
   content: "\e902";
 }
-
-.icon-voleibol:before {
+.icon-padel:before {
+  content: "\e903";
+}
+.icon-park:before {
+  content: "\e904";
+}
+.icon-pet-park:before {
+  content: "\e905";
+}
+.icon-alberca:before {
+  content: "\e906";
+}
+.icon-bar:before {
+  content: "\e90b";
+}
+.icon-rooftop-pool:before {
+  content: "\e90c";
+}
+.icon-seguridad:before {
+  content: "\e90d";
+}
+.icon-spa:before {
   content: "\e90e";
 }
-
-.icon-telefono:before {
+.icon-terraza:before {
+  content: "\e90f";
+}
+.icon-andadores:before {
+  content: "\e910";
+}
+.icon-yoga:before {
+  content: "\e911";
+}
+.icon-tel:before {
   content: "\e945";
 }
 
